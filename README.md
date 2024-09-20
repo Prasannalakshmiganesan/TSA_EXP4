@@ -37,10 +37,10 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Load the dataset
-data = pd.read_csv('Google_Stock_Price_Train.csv')
+data = pd.read_csv('Goodreadsbooks.csv', nrows =200)
 
 # Use the 'Close' price column
-close_prices = data['Close'].dropna()
+close_prices = data['ratings_count'].dropna()
 
 plt.rcParams['figure.figsize'] = [10, 7.5]
 
